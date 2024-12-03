@@ -77,20 +77,26 @@ body {
 
 .home ul {
     list-style: none;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 1.1rem;
 }
 
 .home ul li {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
-.home ul li a {
+.home ul li strong {
+    color: #00ffcc;
+}
+
+.home a {
     color: #00ffcc;
     text-decoration: none;
     font-weight: bold;
 }
 
-.home ul li a:hover {
+.home a:hover {
     text-decoration: underline;
 }
 
