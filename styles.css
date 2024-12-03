@@ -6,10 +6,11 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #101010;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1d1d1d, #121212);
     color: #f4f4f4;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 .container {
@@ -20,16 +21,18 @@ body {
 
 /* Cabeçalho */
 .header {
-    background-color: #1d1d1d;
+    background-color: #1f1f1f;
     padding: 20px;
     text-align: center;
     border-bottom: 2px solid #00ffcc;
 }
 
 .header .logo {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #00ffcc;
-    letter-spacing: 2px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 .navbar {
@@ -43,15 +46,17 @@ body {
 }
 
 .navbar ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 .navbar ul li a {
     text-decoration: none;
     color: #f4f4f4;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
-    transition: color 0.3s;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out;
 }
 
 .navbar ul li a:hover {
@@ -60,53 +65,91 @@ body {
 
 /* Seção Home */
 .home {
-    padding: 40px 0;
+    padding: 80px 0;
     text-align: center;
+    background: url('https://source.unsplash.com/1920x1080/?technology') no-repeat center center;
+    background-size: cover;
+    color: #fff;
 }
 
 .home h2 {
-    font-size: 2.5rem;
-    color: #00ffcc;
+    font-size: 3rem;
     margin-bottom: 20px;
+    color: #00ffcc;
 }
 
 .home p {
     font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.home ul {
-    list-style: none;
-    text-align: left;
-    margin-top: 20px;
-    font-size: 1.1rem;
-}
-
-.home ul li {
-    margin: 10px 0;
-}
-
-.home ul li strong {
-    color: #00ffcc;
+    max-width: 700px;
+    margin: 0 auto 30px;
 }
 
 .home a {
     color: #00ffcc;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
 }
 
 .home a:hover {
     text-decoration: underline;
 }
 
+/* Seção sobre os serviços */
+.servicos {
+    padding: 60px 0;
+    background-color: #2a2a2a;
+    text-align: center;
+}
+
+.servicos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #00ffcc;
+}
+
+.servicos p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.servicos .service-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.servicos .service {
+    background-color: #333;
+    padding: 20px;
+    width: 30%;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.servicos .service:hover {
+    transform: translateY(-10px);
+}
+
+.servicos .service h3 {
+    font-size: 1.8rem;
+    color: #00ffcc;
+    margin-bottom: 10px;
+}
+
+.servicos .service p {
+    font-size: 1.1rem;
+    color: #bbb;
+}
+
 /* Rodapé */
 .footer {
-    background-color: #1d1d1d;
-    padding: 15px 0;
+    background-color: #1f1f1f;
+    padding: 20px 0;
     text-align: center;
     color: #aaa;
-    margin-top: 30px;
 }
 
 .footer p {
@@ -117,6 +160,7 @@ body {
 @media (max-width: 768px) {
     .navbar ul {
         flex-direction: column;
+        align-items: center;
     }
 
     .navbar ul li {
@@ -124,14 +168,25 @@ body {
     }
 
     .home h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .home p {
         font-size: 1rem;
     }
 
-    .footer p {
-        font-size: 0.9rem;
+    .home a {
+        font-size: 1rem;
+    }
+
+    .servicos .service-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicos .service {
+        width: 80%;
+        margin: 10px auto;
     }
 }
+
