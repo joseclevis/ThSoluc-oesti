@@ -13,6 +13,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Container geral */
 .container {
     width: 90%;
     margin: 0 auto;
@@ -61,6 +62,71 @@ body {
 
 .navbar ul li a:hover {
     color: #00ffcc;
+}
+
+/* Menu Responsivo */
+.navbar.active {
+    display: block;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    margin: 0;
+}
+
+.navbar ul li a {
+    font-size: 18px;
+}
+
+/* Responsivo - em dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar.active ul {
+        display: block;
+    }
+
+    .navbar ul li {
+        margin-bottom: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .home h2 {
+        font-size: 2.5rem;
+    }
+
+    .home p {
+        font-size: 1rem;
+    }
+
+    .home a {
+        font-size: 1rem;
+    }
+
+    .servicos .service-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicos .service {
+        width: 80%;
+        margin: 10px auto;
+    }
 }
 
 /* Seção Home */
@@ -156,37 +222,45 @@ body {
     font-size: 1rem;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar ul li {
-        margin: 10px 0;
-    }
-
-    .home h2 {
-        font-size: 2.5rem;
-    }
-
-    .home p {
-        font-size: 1rem;
-    }
-
-    .home a {
-        font-size: 1rem;
-    }
-
-    .servicos .service-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .servicos .service {
-        width: 80%;
-        margin: 10px auto;
-    }
+/* Animações */
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.5s ease-in-out;
 }
 
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-in-out;
+}
+
+.scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Estilo dos campos de input */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input:focus, textarea:focus {
+    border-color: #333;
+}
