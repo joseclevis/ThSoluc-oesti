@@ -1,0 +1,99 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 24px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Botão de modo escuro */
+.theme-toggle-btn {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Seção Home */
+.home {
+    padding: 40px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.home h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.home ul {
+    list-style: none;
+    padding: 0;
+}
+
+.home ul li {
+    font-size: 18px;
+    color: #008080;
+}
+
+.home ul li a {
+    color: #008080;
+    text-decoration: none;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
