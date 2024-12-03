@@ -1,129 +1,131 @@
 /* Estilos gerais */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f4f4f4;
-    color: #333;
-    transition: background-color 0.3s, color 0.3s;
 }
 
-body.dark-mode {
-    background-color: #121212;
-    color: #fff;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #101010;
+    color: #f4f4f4;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 /* Cabeçalho */
 .header {
-    background-color: #333;
+    background-color: #1d1d1d;
     padding: 20px;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: background-color 0.3s;
-}
-
-body.dark-mode .header {
-    background-color: #222;
+    text-align: center;
+    border-bottom: 2px solid #00ffcc;
 }
 
 .header .logo {
-    font-size: 24px;
+    font-size: 2rem;
+    color: #00ffcc;
+    letter-spacing: 2px;
+}
+
+.navbar {
+    margin-top: 15px;
 }
 
 .navbar ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
+    justify-content: center;
 }
 
 .navbar ul li {
-    margin-left: 20px;
+    margin: 0 15px;
 }
 
 .navbar ul li a {
-    color: #fff;
     text-decoration: none;
+    color: #f4f4f4;
+    font-size: 1.1rem;
+    text-transform: uppercase;
     transition: color 0.3s;
 }
 
-body.dark-mode .navbar ul li a {
-    color: #aaa;
-}
-
-/* Botão de modo escuro */
-.theme-toggle-btn {
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-body.dark-mode .theme-toggle-btn {
-    color: #ddd;
+.navbar ul li a:hover {
+    color: #00ffcc;
 }
 
 /* Seção Home */
 .home {
     padding: 40px 0;
-    background-color: #fff;
     text-align: center;
-    transition: background-color 0.3s;
-}
-
-body.dark-mode .home {
-    background-color: #181818;
 }
 
 .home h2 {
-    font-size: 32px;
+    font-size: 2.5rem;
+    color: #00ffcc;
     margin-bottom: 20px;
 }
 
 .home p {
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
 .home ul {
     list-style: none;
-    padding: 0;
 }
 
 .home ul li {
-    font-size: 18px;
-    color: #008080;
-    transition: color 0.3s;
-}
-
-body.dark-mode .home ul li {
-    color: #00b3b3;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
 .home ul li a {
-    color: #008080;
+    color: #00ffcc;
     text-decoration: none;
-    transition: color 0.3s;
+    font-weight: bold;
 }
 
-body.dark-mode .home ul li a {
-    color: #00b3b3;
+.home ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Rodapé */
 .footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #1d1d1d;
+    padding: 15px 0;
     text-align: center;
-    padding: 10px;
-    transition: background-color 0.3s;
+    color: #aaa;
+    margin-top: 30px;
 }
 
-body.dark-mode .footer {
-    background-color: #222;
+.footer p {
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .home h2 {
+        font-size: 2rem;
+    }
+
+    .home p {
+        font-size: 1rem;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
 }
