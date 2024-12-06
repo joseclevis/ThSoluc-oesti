@@ -23,24 +23,27 @@
     </header>
 
     <!-- Sobre Nós -->
-    <section class="section">
+    <section class="section sobre-nos">
         <div class="container">
-            <h2>Sobre Nós</h2>
-            <p>
-                A <strong>TH Soluções em TI</strong> é uma empresa especializada em soluções tecnológicas, oferecendo serviços de alta qualidade 
-                que atendem às necessidades de empresas em diferentes setores. Nosso compromisso é transformar desafios tecnológicos em oportunidades de crescimento.
+            <h2 class="section-title">Sobre Nós</h2>
+            <p class="section-description">
+                A <strong>TH Soluções em TI</strong> é uma empresa especializada em soluções tecnológicas, oferecendo serviços de alta qualidade que atendem às necessidades de empresas em diferentes setores. Nosso compromisso é transformar desafios tecnológicos em oportunidades de crescimento.
             </p>
-            <h3>Nosso Propósito</h3>
-            <p>
-                Garantir que nossos clientes tenham acesso às melhores tecnologias disponíveis no mercado, com soluções personalizadas que promovam eficiência, segurança e inovação.
-            </p>
-            <h3>Nossos Valores</h3>
-            <ul>
-                <li>Excelência no atendimento ao cliente</li>
-                <li>Inovação contínua</li>
-                <li>Compromisso com resultados</li>
-                <li>Ética e transparência</li>
-            </ul>
+            <div class="sobre-detalhes">
+                <div class="propósito">
+                    <h3 class="subsection-title">Nosso Propósito</h3>
+                    <p>Garantir que nossos clientes tenham acesso às melhores tecnologias disponíveis no mercado, com soluções personalizadas que promovam eficiência, segurança e inovação.</p>
+                </div>
+                <div class="valores">
+                    <h3 class="subsection-title">Nossos Valores</h3>
+                    <ul class="valores-list">
+                        <li>📌 Excelência no atendimento ao cliente</li>
+                        <li>💡 Inovação contínua</li>
+                        <li>📈 Compromisso com resultados</li>
+                        <li>⚖️ Ética e transparência</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -50,5 +53,14 @@
             <p>&copy; 2024 TH Soluções em TI. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.querySelectorAll('.navbar a').forEach(link => {
+            link.addEventListener('click', () => {
+                alert(`Você está navegando para: ${link.textContent}`);
+            });
+        });
+    </script>
 </body>
 </html>
