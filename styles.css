@@ -1,161 +1,20 @@
-/* Estilos Gerais */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Estilos para h3 e p */
+h3, p {
+    color: #fff; /* Cor branca para h3 e p */
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #101010; /* Cor de fundo escuro */
-    color: #fff; /* Texto em branco */
-    line-height: 1.6;
-    overflow-x: hidden; /* Evita scroll horizontal */
+/* Estilos para as seções de Serviços, Sobre e Contatos (se necessário) */
+#servicos h3, #servicos p,
+#sobre h3, #sobre p,
+#contatos h3, #contatos p {
+    color: #fff; /* Garante que h3 e p nas seções específicas também sejam brancos */
 }
 
-/* Cabeçalho */
-.header {
-    background-color: #101010;
-    padding: 20px 0;
-    border-bottom: 3px solid #00ffcc;
-}
-
-.header .logo {
-    font-size: 2rem;
-    color: #00ffcc;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-left: 20px;
-}
-
-.navbar ul {
-    display: flex;
-    list-style: none;
-    justify-content: flex-end;
-}
-
-.navbar ul li {
-    margin: 0 20px;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #fff; /* Texto branco para os links */
-    font-size: 1rem;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-}
-
-.navbar ul li a:hover, .navbar ul li a.active {
-    color: #00ffcc;
-    border-bottom: 2px solid #00ffcc;
-}
-
-/* Estilo para as páginas de Serviços, Sobre e Contatos */
-.page-background {
-    background-color: #101010; /* Fundo escuro */
-    color: #fff; /* Texto branco */
-}
-
-/* Serviços */
-.section-title {
-    font-size: 2rem;
-    color: #00ffcc;
-    margin-bottom: 30px;
-}
-
-.section-description {
-    font-size: 1.2rem;
-    color: #bbb; /* Cor do texto mais claro */
-    margin-bottom: 30px;
-}
-
-.service-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.service {
-    background: #222;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    flex: 1 1 30%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 255, 204, 0.3);
-}
-
-.service h3 {
-    font-size: 1.5rem;
-    color: #00ffcc;
-    margin-bottom: 10px;
-}
-
-.service p {
-    color: #bbb; /* Texto das descrições mais claro */
-}
-
-.service-btn,
-.contract-btn {
-    background-color: #00ffcc;
-    color: #101010;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
-}
-
-.service-btn:hover,
-.contract-btn:hover {
-    background-color: #00cc99;
-}
-
-/* Sobre */
-#sobre .section-title {
-    color: #00ffcc;
-}
-
-#sobre p {
-    color: #bbb; /* Texto das descrições mais claro */
-}
-
-/* Contatos */
-#contatos .section-title {
-    color: #00ffcc;
-}
-
-#contatos p {
-    color: #bbb; /* Texto das descrições mais claro */
-}
-
-/* Rodapé */
-.footer {
-    background-color: #101010;
-    padding: 20px 0;
-    text-align: center;
-    color: #aaa;
+/* Caso queira ajustar outros elementos como .service, .footer, etc. */
+.service h3, .service p {
+    color: #fff; /* Para garantir que as descrições de serviços também fiquem brancas */
 }
 
 .footer p {
-    font-size: 1rem;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .service {
-        flex: 1 1 100%;
-    }
+    color: #fff; /* Rodapé com texto branco */
 }
