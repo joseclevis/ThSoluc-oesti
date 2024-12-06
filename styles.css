@@ -132,11 +132,6 @@ body {
     box-shadow: 0 8px 16px rgba(0, 255, 204, 0.3); /* Efeito de destaque no hover */
 }
 
-.feature img {
-    width: 60px;
-    margin-bottom: 20px;
-}
-
 .feature h3 {
     font-size: 1.5rem;
     color: #00ffcc;
