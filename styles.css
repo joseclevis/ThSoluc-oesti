@@ -192,4 +192,9 @@ body {
         flex: 1 1 100%;
         margin-bottom: 20px;
     }
+    /* Definindo as letras como brancas para todo o conteúdo */
+body {
+    color: #fff; /* Define a cor do texto como branca */
+}
+
 }
