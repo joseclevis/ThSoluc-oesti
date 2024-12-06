@@ -1,3 +1,8 @@
+/* Cor do texto nas páginas Serviços, Contatos e Sobre */
+.servicos, .contatos, .sobre {
+    color: #fff; /* Definindo as letras para branco */
+}
+
 /* Estilos Gerais */
 * {
     margin: 0;
