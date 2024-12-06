@@ -10,12 +10,8 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-}
-
-.container {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1200px;
+    background: #101010; /* Cor de fundo mais escura para dar um aspecto mais futurista */
+    overflow-x: hidden; /* Evita scroll horizontal */
 }
 
 /* Cabeçalho */
@@ -66,6 +62,9 @@ body {
     color: #fff;
     text-align: center;
     padding: 40px 0;
+    position: relative;
+    background-size: cover;
+    animation: bgAnimation 10s infinite alternate; /* Animação de fundo */
 }
 
 .hero-content {
@@ -125,11 +124,12 @@ body {
     text-align: center;
     flex: 1 1 30%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature:hover {
     transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 255, 204, 0.3); /* Efeito de destaque no hover */
 }
 
 .feature img {
@@ -157,6 +157,16 @@ body {
 
 .footer p {
     font-size: 1rem;
+}
+
+/* Animação de fundo */
+@keyframes bgAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
 }
 
 /* Responsividade */
