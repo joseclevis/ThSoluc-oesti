@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #101010; /* Cor de fundo mais escura */
-    color: #fff; /* Definindo o texto como branco */
+    background-color: #101010; /* Cor de fundo escuro */
+    color: #fff; /* Texto em branco */
     line-height: 1.6;
     overflow-x: hidden; /* Evita scroll horizontal */
 }
@@ -51,11 +51,13 @@ body {
     border-bottom: 2px solid #00ffcc;
 }
 
-/* Serviços */
-.section {
-    padding: 60px 0;
+/* Estilo para as páginas de Serviços, Sobre e Contatos */
+.page-background {
+    background-color: #101010; /* Fundo escuro */
+    color: #fff; /* Texto branco */
 }
 
+/* Serviços */
 .section-title {
     font-size: 2rem;
     color: #00ffcc;
@@ -116,27 +118,22 @@ body {
     background-color: #00cc99;
 }
 
-/* Contrato */
-#contrato .section-title {
+/* Sobre */
+#sobre .section-title {
     color: #00ffcc;
 }
 
-#contrato p {
+#sobre p {
     color: #bbb; /* Texto das descrições mais claro */
 }
 
-#contrato button {
-    background-color: #00ffcc;
-    color: #101010;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+/* Contatos */
+#contatos .section-title {
+    color: #00ffcc;
 }
 
-#contrato button:hover {
-    background-color: #00cc99;
+#contatos p {
+    color: #bbb; /* Texto das descrições mais claro */
 }
 
 /* Rodapé */
