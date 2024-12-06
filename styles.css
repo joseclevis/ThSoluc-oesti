@@ -193,10 +193,3 @@ body {
         margin-bottom: 20px;
     }
 }
-/* Ajuste de estilo para a imagem IoT */
-.feature img {
-    max-width: 100%; /* A imagem vai se ajustar ao tamanho disponível */
-    height: auto;    /* Mantém a proporção da imagem */
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
