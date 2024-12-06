@@ -1,3 +1,4 @@
+
 /* Estilos Gerais */
 * {
     margin: 0;
@@ -7,8 +8,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #101010; /* Cor escura para o fundo geral */
-    color: #fff; /* Texto branco por padrão */
+    background-color: #f4f4f4;
+    color: #333;
     line-height: 1.6;
 }
 
@@ -56,7 +57,7 @@ body {
     border-bottom: 2px solid #00ffcc;
 }
 
-/* Hero Section com fundo tecnológico */
+/* Hero Section */
 .hero {
     display: flex;
     justify-content: center;
@@ -157,27 +158,6 @@ body {
 
 .footer p {
     font-size: 1rem;
-}
-
-/* Estilos para h3 e p */
-h3, p {
-    color: #fff; /* Cor branca para h3 e p */
-}
-
-/* Estilos para as seções de Serviços, Sobre e Contatos */
-#servicos h3, #servicos p,
-#sobre h3, #sobre p,
-#contatos h3, #contatos p {
-    color: #fff; /* Garante que h3 e p nas seções específicas também sejam brancos */
-}
-
-/* Caso queira ajustar outros elementos como .service, .footer, etc. */
-.service h3, .service p {
-    color: #fff; /* Para garantir que as descrições de serviços também fiquem brancas */
-}
-
-.footer p {
-    color: #fff; /* Rodapé com texto branco */
 }
 
 /* Responsividade */
