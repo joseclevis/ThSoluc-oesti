@@ -143,6 +143,20 @@ body {
     color: #bbb;
 }
 
+/* Seção Sobre Nós */
+.about-us {
+    padding: 50px 0;
+    background-color: #101010;
+    color: #fff;
+    text-align: center;
+}
+
+.about-us p {
+    font-size: 1.1rem;
+    color: #bbb;
+    margin-top: 20px;
+}
+
 /* Rodapé */
 .footer {
     background-color: #101010;
