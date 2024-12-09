@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4; /* Cor de fundo para toda a página */
-    color: #333;
+    background-color: #181818; /* Cor de fundo escuro */
+    color: #f4f4f4; /* Texto claro para contraste */
     line-height: 1.6;
 }
 
@@ -21,7 +21,7 @@ body {
 
 /* Cabeçalho */
 .header {
-    background-color: #101010;
+    background-color: #101010; /* Fundo escuro para o cabeçalho */
     padding: 20px 0;
     border-bottom: 3px solid #00ffcc;
 }
@@ -57,129 +57,76 @@ body {
     border-bottom: 2px solid #00ffcc;
 }
 
-/* Hero Section (utilizado nas páginas principais) */
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('https://source.unsplash.com/1920x1080/?technology') no-repeat center center/cover;
-    height: 60vh;
-    color: #fff;
-    text-align: center;
-    padding: 40px 0;
-}
-
-.hero-content {
-    max-width: 600px;
-}
-
-.hero h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.btn-primary {
-    padding: 15px 30px;
-    background-color: #00ffcc;
-    color: #101010;
-    text-decoration: none;
-    font-size: 1rem;
-    border-radius: 25px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.btn-primary:hover {
-    background-color: #00cc99;
-    transform: scale(1.05);
-}
-
-/* Seção de Serviços */
+/* Seção de Contato */
 .section {
-    background-color: #ffffff; /* Cor de fundo para as seções abaixo da hero */
+    background-color: #181818; /* Fundo escuro para a seção de contato */
     padding: 50px 0;
 }
 
-.section-title {
+.section h2 {
     font-size: 2rem;
-    color: #00ffcc;
+    color: #00ffcc; /* Título com cor verde para destacar */
     margin-bottom: 30px;
 }
 
-.service-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
+.section p {
+    color: #bbb; /* Texto claro para melhor legibilidade */
+    font-size: 1.1rem;
 }
 
-.service {
-    background-color: #222;
+.contact-info {
+    background-color: #222; /* Fundo mais escuro para a área de informações */
     padding: 20px;
     border-radius: 8px;
+    margin-bottom: 30px;
     color: #fff;
-    width: 48%; /* Ajuste de largura para que se ajustem bem no layout */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
 }
 
-.service:hover {
-    transform: translateY(-10px);
+.contact-info p {
+    margin: 10px 0;
 }
 
-.service h3 {
-    font-size: 1.5rem;
-    color: #00ffcc;
-    margin-bottom: 10px;
-}
-
-.service p {
-    color: #bbb;
-}
-
-.service-btn, .contract-btn {
-    padding: 10px 20px;
-    margin-top: 10px;
-    border-radius: 5px;
+.whatsapp-link {
+    color: #25D366; /* Cor do WhatsApp */
     text-decoration: none;
-    color: #fff;
-    background-color: #00ffcc;
-    transition: background-color 0.3s ease;
 }
 
-.service-btn:hover, .contract-btn:hover {
-    background-color: #00cc99;
+.whatsapp-link:hover {
+    text-decoration: underline;
 }
 
-/* Seção de Contato */
-.contact-section {
-    padding: 50px 0;
-    background-color: #f9f9f9;
+form {
+    background-color: #222; /* Fundo escuro para o formulário */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+form label {
+    color: #fff; /* Cor dos rótulos */
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: block;
 }
 
-.contact-form input, .contact-form textarea {
+form input, form textarea {
+    width: 100%;
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    background-color: #333; /* Cor de fundo para os campos */
+    color: #fff; /* Texto claro para campos */
+    margin-bottom: 15px;
     font-size: 1rem;
 }
 
-.contact-form textarea {
-    resize: vertical;
-    min-height: 150px;
+form input:focus, form textarea:focus {
+    border-color: #00ffcc; /* Cor de borda quando o campo é focado */
+    outline: none;
 }
 
-.contact-form button {
+form button {
     background-color: #00ffcc;
     color: #101010;
     padding: 15px 30px;
@@ -187,9 +134,10 @@ body {
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-size: 1rem;
 }
 
-.contact-form button:hover {
+form button:hover {
     background-color: #00cc99;
 }
 
@@ -212,28 +160,19 @@ body {
         align-items: center;
     }
 
-    .hero h2 {
+    .section h2 {
         font-size: 2.5rem;
     }
 
-    .hero p {
+    .section p {
         font-size: 1rem;
     }
 
-    .features {
-        flex-direction: column;
+    form {
+        padding: 20px;
     }
 
-    .feature {
-        flex: 1 1 100%;
-        margin-bottom: 20px;
-    }
-
-    .service {
-        width: 100%; /* As seções de serviço ficam com largura total em telas menores */
-    }
-
-    .service-btn, .contract-btn {
-        width: 100%; /* Botões ocupam 100% da largura */
+    form button {
+        width: 100%; /* Botão de envio ocupa toda a largura em telas menores */
     }
 }
