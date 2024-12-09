@@ -7,11 +7,12 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Cor de fundo para toda a página */
     color: #333;
     line-height: 1.6;
 }
 
+/* Container */
 .container {
     width: 90%;
     margin: 0 auto;
@@ -182,4 +183,10 @@ body {
         flex: 1 1 100%;
         margin-bottom: 20px;
     }
+}
+
+/* Adicionando fundo em outras seções */
+.section {
+    background-color: #ffffff; /* Cor de fundo para as seções abaixo da hero */
+    padding: 50px 0;
 }
