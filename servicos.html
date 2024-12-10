@@ -28,50 +28,58 @@
     <div class="container">
         <h2 class="section-title">Nossos Serviços</h2>
         <p class="section-description">Soluções tecnológicas avançadas para atender às necessidades específicas da sua empresa.</p>
-        <div class="service-list">
-            <div class="service">
-                <h3>Cyber Security</h3>
-                <p>Proteção contra ataques cibernéticos 24/7.</p>
-                <p><strong>Valor:</strong> R$ 1.200/mês</p>
-                <button class="btn" onclick="showDetails('Cyber Security')">Saiba Mais</button>
-                <button class="btn-primary" onclick="location.href='contatos.html?servico=Cyber Security'">Contratar</button>
-            </div>
 
-            <div class="service">
-                <h3>Cabeamento Estruturado</h3>
-                <p>Redes corporativas seguras e eficazes.</p>
-                <p><strong>Valor:</strong> R$ 900/projeto</p>
-                <button class="btn" onclick="showDetails('Cabeamento Estruturado')">Saiba Mais</button>
-                <button class="btn-primary" onclick="location.href='contatos.html?servico=Cabeamento Estruturado'">Contratar</button>
-            </div>
+        <table class="service-table">
+            <thead>
+                <tr>
+                    <th>Serviço</th>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cyber Security</td>
+                    <td>Proteção contra ataques cibernéticos 24/7.</td>
+                    <td>R$ 1.200/mês</td>
+                    <td>
+                        <button class="btn" onclick="showDetails('Cyber Security')">Saiba Mais</button>
+                        <button class="btn-primary" onclick="location.href='contatos.html?servico=Cyber Security'">Contratar</button>
+                    </td>
+                </tr>
 
-            <div class="service">
-                <h3>Segurança Eletrônica</h3>
-                <p>Monitoramento contínuo e equipamentos avançados.</p>
-                <p><strong>Valor:</strong> R$ 800/mês</p>
-                <button class="btn" onclick="showDetails('Segurança Eletrônica')">Saiba Mais</button>
-                <button class="btn-primary" onclick="location.href='contatos.html?servico=Segurança Eletrônica'">Contratar</button>
-            </div>
-        </div>
-    </div>
-</section>
+                <tr>
+                    <td>Cabeamento Estruturado</td>
+                    <td>Redes corporativas seguras e eficazes.</td>
+                    <td>R$ 900/projeto</td>
+                    <td>
+                        <button class="btn" onclick="showDetails('Cabeamento Estruturado')">Saiba Mais</button>
+                        <button class="btn-primary" onclick="location.href='contatos.html?servico=Cabeamento Estruturado'">Contratar</button>
+                    </td>
+                </tr>
 
-<!-- Contrato -->
-<section id="contrato" class="section">
-    <div class="container">
-        <h2 class="section-title">Contrato de Prestação de Serviços</h2>
-        <p class="section-description">Termos e condições para a contratação dos nossos serviços.</p>
+                <tr>
+                    <td>Segurança Eletrônica</td>
+                    <td>Monitoramento contínuo e equipamentos avançados.</td>
+                    <td>R$ 800/mês</td>
+                    <td>
+                        <button class="btn" onclick="showDetails('Segurança Eletrônica')">Saiba Mais</button>
+                        <button class="btn-primary" onclick="location.href='contatos.html?servico=Segurança Eletrônica'">Contratar</button>
+                    </td>
+                </tr>
 
-        <h3>1. Termos e Condições Gerais</h3>
-        <p>O contrato define as responsabilidades e obrigações de ambas as partes.</p>
-
-        <h3>2. Responsabilidades</h3>
-        <p>A empresa se compromete a prestar os serviços contratados com qualidade e no prazo estipulado.</p>
-
-        <h3>3. Validade</h3>
-        <p>O contrato entra em vigor após a assinatura de ambas as partes.</p>
-
-        <button class="btn-primary" onclick="location.href='contatos.html'">Solicitar Assinatura</button>
+                <tr>
+                    <td>Service Desk</td>
+                    <td>Suporte técnico especializado 24/7.</td>
+                    <td>R$ 1.500/mês</td>
+                    <td>
+                        <button class="btn" onclick="showDetails('Service Desk')">Saiba Mais</button>
+                        <button class="btn-primary" onclick="location.href='contatos.html?servico=Service Desk'">Contratar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </section>
 
@@ -91,3 +99,4 @@ function showDetails(serviceName) {
 
 </body>
 </html>
+
