@@ -1,34 +1,18 @@
-// Efeito de rolagem suave com personalização para ancoragem
-const smoothScroll = (event) => {
-    event.preventDefault();
-    const targetId = event.target.getAttribute('href');
-    const targetElement = document.querySelector(targetId);
+// Animação de Detalhes
+function showDetails(serviceName) {
+    const modal = document.createElement("div");
+    modal.className = "modal";
+    modal.innerHTML = `
+        <div class="modal-content">
+            <h2>${serviceName}</h2>
+            <p>Mais informações sobre o serviço: <strong>${serviceName}</strong>.</p>
+            <button onclick="closeModal()" class="btn">Fechar</button>
+        </div>
+    `;
+    document.body.appendChild(modal);
+}
 
-    targetElement.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start', // Ajusta a posição de destino para o topo
-    });
-};
-
-// Adiciona o efeito de rolagem suave para todos os links de ancoragem
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', smoothScroll);
-});
-
-// Função para animação quando as seções entram na tela
-const sectionObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target); // Para melhorar a performance, observamos a seção apenas uma vez
-        }
-    });
-}, {
-    root: null, // Usa o viewport como referência
-    threshold: 0.1, // Dispara quando 10% da seção estiver visível
-});
-
-// Observando cada seção de interesse para animação
-document.querySelectorAll('.feature').forEach(feature => {
-    sectionObserver.observe(feature);
-});
+function closeModal() {
+    const modal = document.querySelector(".modal");
+    if (modal) modal.remove();
+}
