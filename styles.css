@@ -1,8 +1,12 @@
 /* Estilos Gerais */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
@@ -14,7 +18,7 @@ body {
 
 /* Cabeçalho */
 .header {
-    background-color: #333;
+    background: linear-gradient(to right, #006666, #00cccc);
     color: white;
     padding: 20px;
     display: flex;
@@ -24,34 +28,36 @@ body {
 
 .logo {
     font-size: 24px;
+    font-weight: bold;
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar ul li {
-    margin-left: 20px;
+    gap: 20px;
 }
 
 .navbar ul li a {
     color: white;
     text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ffcc00;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to right, #006666, #00cccc);
+    background: url('tech-bg.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 60px 20px;
 }
 
 .hero h2 {
-    font-size: 36px;
+    font-size: 48px;
     margin-bottom: 10px;
 }
 
@@ -62,22 +68,27 @@ body {
 
 .btn-primary {
     padding: 10px 20px;
-    background-color: white;
+    background: #ffcc00;
     color: #006666;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
-/* Destaques */
+.btn-primary:hover {
+    background: #ffc107;
+}
+
+/* Serviços Destaques */
 .highlights {
     padding: 40px 0;
-    background-color: white;
+    background-color: #fff;
     text-align: center;
 }
 
 .section-title {
-    font-size: 28px;
+    font-size: 32px;
     margin-bottom: 20px;
     color: #006666;
 }
@@ -91,9 +102,14 @@ body {
 .feature {
     background: #f0f0f0;
     padding: 20px;
-    border-radius: 5px;
-    text-align: center;
+    border-radius: 8px;
     width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: scale(1.05);
 }
 
 .feature h3 {
@@ -108,7 +124,7 @@ body {
 
 /* Rodapé */
 .footer {
-    background-color: #333;
+    background: #333;
     color: white;
     text-align: center;
     padding: 10px;
