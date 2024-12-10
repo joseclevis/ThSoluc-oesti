@@ -1,4 +1,4 @@
-/* Estilos Globais */
+/* Reset Básico */
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +6,10 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #121212;
+    font-family: 'Poppins', sans-serif;
+    background: #0d1117;
     color: #f4f4f4;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -18,9 +19,8 @@ body {
 
 /* Cabeçalho */
 .header {
-    background: linear-gradient(to right, #006666, #00cccc);
-    padding: 20px 0;
-    color: white;
+    background: linear-gradient(to right, #00b4d8, #03045e);
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,75 +29,55 @@ body {
 .logo {
     font-size: 28px;
     font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 
 .navbar ul li a {
     color: white;
-    text-decoration: none;
     font-size: 18px;
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.navbar ul li a:hover, 
-.navbar ul li a.active {
-    color: #ffcc00;
-}
-
-/* Seção de Serviços */
-.section {
-    padding: 60px 0;
-}
-
-.section-title {
-    font-size: 36px;
-    color: #00cccc;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.section-description {
-    font-size: 18px;
-    margin-bottom: 40px;
-    text-align: center;
-    color: #f4f4f4;
+.navbar ul li a:hover, .navbar ul li a.active {
+    color: #ffdd00;
 }
 
 /* Tabela de Serviços */
 .service-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: 40px 0;
+    background: rgba(3, 4, 94, 0.8);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .service-table th, .service-table td {
     padding: 15px 20px;
     text-align: left;
-    border: 1px solid #555;
+    color: white;
 }
 
 .service-table th {
-    background: #00cccc;
-    color: #121212;
+    background: #0077b6;
     font-size: 18px;
+    text-transform: uppercase;
 }
 
 .service-table tr:nth-child(even) {
-    background: #222;
+    background: rgba(3, 4, 94, 0.7);
 }
 
 .service-table tr:hover {
-    background: #333;
-    transition: background 0.3s ease;
-}
-
-.service-table td {
-    color: #f4f4f4;
+    background: #03045e;
 }
 
 /* Botões */
@@ -105,34 +85,33 @@ body {
     padding: 10px 20px;
     font-size: 16px;
     margin-top: 5px;
-    text-decoration: none;
-    display: inline-block;
     border-radius: 5px;
-    transition: background 0.3s ease;
     cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
 }
 
 .btn {
-    background: #006666;
+    background: #0077b6;
     color: white;
 }
 
 .btn-primary {
-    background: #ffcc00;
-    color: #121212;
+    background: #ffdd00;
+    color: #03045e;
 }
 
 .btn:hover {
-    background: #00cccc;
+    background: #00b4d8;
 }
 
 .btn-primary:hover {
-    background: #ffc107;
+    background: #ffd700;
 }
 
 /* Rodapé */
 .footer {
-    background: #111;
+    background: #03045e;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -140,4 +119,16 @@ body {
 
 .footer p {
     font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-table {
+        font-size: 14px;
+    }
 }
