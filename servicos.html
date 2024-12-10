@@ -7,110 +7,87 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <header class="header">
-        <div class="container">
-            <h1 class="logo">TH Soluções em TI</h1>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="contatos.html">Contatos</a></li>
-                    <li><a href="sobre.html">Sobre Nós</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <!-- Serviços -->
-    <section id="servicos" class="section">
-        <div class="container">
-            <h2 class="section-title">Nossos Serviços</h2>
-            <p class="section-description">Oferecemos soluções personalizadas e inovadoras para atender às necessidades específicas da sua empresa.</p>
-            <div class="service-list">
-                <!-- Serviço 1 -->
-                <div class="service">
-                    <h3>Cyber Security</h3>
-                    <p>Proteção de redes e dados contra ataques cibernéticos, garantindo a segurança da sua empresa 24/7.</p>
-                    <p><strong>Valor:</strong> R$ 1.200/mês</p>
-                    <button class="service-btn" onclick="showDetails('Cyber Security')">Saiba Mais</button>
-                    <button class="contract-btn" onclick="location.href='contatos.html?servico=Cyber Security'">Contratar Serviço</button> <!-- Botão para contratar -->
-                </div>
-                <!-- Serviço 2 -->
-                <div class="service">
-                    <h3>Cabeamento Estruturado</h3>
-                    <p>Planejamento, instalação e manutenção de redes corporativas, garantindo comunicação eficiente e segura.</p>
-                    <p><strong>Valor:</strong> R$ 900 por projeto</p>
-                    <button class="service-btn" onclick="showDetails('Cabeamento Estruturado')">Saiba Mais</button>
-                    <button class="contract-btn" onclick="location.href='contatos.html?servico=Cabeamento Estruturado'">Contratar Serviço</button> <!-- Botão para contratar -->
-                </div>
-                <!-- Serviço 3 -->
-                <div class="service">
-                    <h3>Segurança Eletrônica</h3>
-                    <p>Monitoramento contínuo e fornecimento de equipamentos de segurança de última geração para sua empresa.</p>
-                    <p><strong>Valor:</strong> R$ 800/mês</p>
-                    <button class="service-btn" onclick="showDetails('Segurança Eletrônica')">Saiba Mais</button>
-                    <button class="contract-btn" onclick="location.href='contatos.html?servico=Segurança Eletrônica'">Contratar Serviço</button> <!-- Botão para contratar -->
-                </div>
-                <!-- Serviço 4 -->
-                <div class="service">
-                    <h3>Service Desk</h3>
-                    <p>Suporte técnico especializado 24/7 para resolver qualquer problema com rapidez e eficiência.</p>
-                    <p><strong>Valor:</strong> R$ 1.500/mês</p>
-                    <button class="service-btn" onclick="showDetails('Service Desk')">Saiba Mais</button>
-                    <button class="contract-btn" onclick="location.href='contatos.html?servico=Service Desk'">Contratar Serviço</button> <!-- Botão para contratar -->
-                </div>
-                <!-- Serviço 5 -->
-                <div class="service">
-                    <h3>Backup e Recuperação</h3>
-                    <p>Soluções de backup para proteger seus dados essenciais e garantir recuperação rápida em caso de desastre.</p>
-                    <p><strong>Valor:</strong> R$ 1.000/mês</p>
-                    <button class="service-btn" onclick="showDetails('Backup e Recuperação')">Saiba Mais</button>
-                    <button class="contract-btn" onclick="location.href='contatos.html?servico=Backup e Recuperação'">Contratar Serviço</button> <!-- Botão para contratar -->
-                </div>
-                <!-- Serviço 6 -->
-                <div class="service">
-                    <h3>IoT</h3>
-                    <p>Automação inteligente para sua empresa, integrando dispositivos para otimizar operações e processos.</p>
-                    <p><strong>Valor:</strong> R$ 1.200/mês</p>
-                    <button class="service-btn" onclick="showDetails('IoT')">Saiba Mais</button>
-                    <button class="contract-btn" onclick="location.href='contatos.html?servico=IoT'">Contratar Serviço</button> <!-- Botão para contratar -->
-                </div>
+<!-- Cabeçalho -->
+<header class="header">
+    <div class="container">
+        <h1 class="logo">TH Soluções em TI</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#servicos" class="active">Serviços</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Seção de Serviços -->
+<section id="servicos" class="section">
+    <div class="container">
+        <h2 class="section-title">Nossos Serviços</h2>
+        <p class="section-description">Soluções tecnológicas avançadas para atender às necessidades específicas da sua empresa.</p>
+        <div class="service-list">
+            <div class="service">
+                <h3>Cyber Security</h3>
+                <p>Proteção contra ataques cibernéticos 24/7.</p>
+                <p><strong>Valor:</strong> R$ 1.200/mês</p>
+                <button class="btn" onclick="showDetails('Cyber Security')">Saiba Mais</button>
+                <button class="btn-primary" onclick="location.href='contatos.html?servico=Cyber Security'">Contratar</button>
+            </div>
+
+            <div class="service">
+                <h3>Cabeamento Estruturado</h3>
+                <p>Redes corporativas seguras e eficazes.</p>
+                <p><strong>Valor:</strong> R$ 900/projeto</p>
+                <button class="btn" onclick="showDetails('Cabeamento Estruturado')">Saiba Mais</button>
+                <button class="btn-primary" onclick="location.href='contatos.html?servico=Cabeamento Estruturado'">Contratar</button>
+            </div>
+
+            <div class="service">
+                <h3>Segurança Eletrônica</h3>
+                <p>Monitoramento contínuo e equipamentos avançados.</p>
+                <p><strong>Valor:</strong> R$ 800/mês</p>
+                <button class="btn" onclick="showDetails('Segurança Eletrônica')">Saiba Mais</button>
+                <button class="btn-primary" onclick="location.href='contatos.html?servico=Segurança Eletrônica'">Contratar</button>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Contrato -->
-    <section id="contrato" class="section">
-        <div class="container">
-            <h2 class="section-title">Contrato de Prestação de Serviços</h2>
-            <p class="section-description">Abaixo estão os termos e condições para a contratação dos nossos serviços.</p>
-            
-            <h3>1. Termos e Condições Gerais</h3>
-            <p>Este contrato estabelece as condições para a prestação dos serviços descritos no site da TH Soluções em TI...</p>
+<!-- Contrato -->
+<section id="contrato" class="section">
+    <div class="container">
+        <h2 class="section-title">Contrato de Prestação de Serviços</h2>
+        <p class="section-description">Termos e condições para a contratação dos nossos serviços.</p>
 
-            <h3>2. Responsabilidades</h3>
-            <p>A empresa se compromete a fornecer os serviços conforme descrito, sendo responsável pela qualidade e pela entrega no prazo...</p>
+        <h3>1. Termos e Condições Gerais</h3>
+        <p>O contrato define as responsabilidades e obrigações de ambas as partes.</p>
 
-            <h3>3. Validade</h3>
-            <p>O contrato terá validade após a assinatura de ambas as partes...</p>
+        <h3>2. Responsabilidades</h3>
+        <p>A empresa se compromete a prestar os serviços contratados com qualidade e no prazo estipulado.</p>
 
-            <button onclick="window.location.href='contatos.html'">Solicitar Assinatura</button>
-        </div>
-    </section>
+        <h3>3. Validade</h3>
+        <p>O contrato entra em vigor após a assinatura de ambas as partes.</p>
 
-    <!-- Rodapé -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 TH Soluções em TI. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+        <button class="btn-primary" onclick="location.href='contatos.html'">Solicitar Assinatura</button>
+    </div>
+</section>
 
-    <!-- JavaScript -->
-    <script>
-        function showDetails(serviceName) {
-            alert(`Mais detalhes sobre o serviço: ${serviceName}. Entre em contato para informações adicionais.`);
-        }
-    </script>
+<!-- Rodapé -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 TH Soluções em TI. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script>
+function showDetails(serviceName) {
+    alert(`Mais detalhes sobre o serviço: ${serviceName}. Entre em contato para mais informações.`);
+}
+</script>
+
 </body>
 </html>
