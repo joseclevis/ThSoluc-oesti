@@ -1,142 +1,115 @@
-/* Estilos gerais */
-* {
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-body.dark-mode {
-    background-color: #121212;
-    color: #fff;
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
+    width: 80%;
     margin: 0 auto;
 }
 
 /* Cabeçalho */
 .header {
-    background-color: #101010;
+    background-color: #333;
+    color: white;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header .logo {
-    font-size: 2rem;
-    color: #00ffcc;
-    font-weight: bold;
-    text-transform: uppercase;
+.logo {
+    font-size: 24px;
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar ul li {
-    margin: 0 15px;
+    margin-left: 20px;
 }
 
 .navbar ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    font-size: 1rem;
-    text-transform: uppercase;
-    transition: color 0.3s;
 }
 
-.navbar ul li a:hover, .navbar ul li a.active {
-    color: #00ffcc;
-}
-
-/* Botão de modo escuro */
-.theme-toggle-btn {
-    background: none;
-    border: 2px solid #00ffcc;
-    color: #00ffcc;
-    padding: 8px 16px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.theme-toggle-btn:hover {
-    background-color: #00ffcc;
-    color: #101010;
-}
-
-/* Seção Principal */
-.home {
-    padding: 60px 0;
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #006666, #00cccc);
+    color: white;
     text-align: center;
-    background: linear-gradient(135deg, #101010, #222);
-    color: #fff;
+    padding: 60px 20px;
 }
 
-.home h2 {
-    font-size: 3rem;
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
     margin-bottom: 20px;
-    color: #00ffcc;
 }
 
-.home p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-}
-
-.home ul {
-    list-style: none;
-    margin-top: 20px;
-}
-
-.home ul li {
-    font-size: 1.2rem;
-    color: #00ffcc;
-}
-
-.home ul li a {
-    color: #00ffcc;
+.btn-primary {
+    padding: 10px 20px;
+    background-color: white;
+    color: #006666;
     text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Destaques */
+.highlights {
+    padding: 40px 0;
+    background-color: white;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #006666;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.feature {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 30%;
+}
+
+.feature h3 {
+    color: #006666;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #555;
 }
 
 /* Rodapé */
 .footer {
-    background-color: #101010;
-    color: #fff;
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .home h2 {
-        font-size: 2.5rem;
-    }
-
-    .home p {
-        font-size: 1rem;
-    }
-
-    .theme-toggle-btn {
-        width: 100%;
-        margin-top: 10px;
-    }
+    padding: 10px;
 }
