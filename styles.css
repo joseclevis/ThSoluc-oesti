@@ -1,257 +1,99 @@
-/* Estilos Gerais */
-* {
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #121212; /* Fundo escuro para toda a página */
-    color: #f4f4f4; /* Texto claro para contraste */
-    line-height: 1.6;
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
 }
 
-/* Container Geral */
 .container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
-    max-width: 1200px;
 }
 
 /* Cabeçalho */
 .header {
-    background-color: #101010;
-    padding: 20px 0;
-    border-bottom: 3px solid #00ffcc;
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header .logo {
-    font-size: 2rem;
-    color: #00ffcc;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-left: 20px;
+    font-size: 24px;
 }
 
 .navbar ul {
-    display: flex;
     list-style: none;
-    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 .navbar ul li {
-    margin: 0 20px;
+    margin-left: 20px;
 }
 
 .navbar ul li a {
+    color: #fff;
     text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
 }
 
-.navbar ul li a:hover, .navbar ul li a.active {
-    color: #00ffcc;
-    border-bottom: 2px solid #00ffcc;
+/* Botão de modo escuro */
+.theme-toggle-btn {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
 }
 
-/* Hero Section */
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('https://source.unsplash.com/1920x1080/?technology') no-repeat center center/cover;
-    height: 60vh;
-    color: #fff;
-    text-align: center;
+/* Seção Home */
+.home {
     padding: 40px 0;
+    background-color: #fff;
+    text-align: center;
 }
 
-.hero-content {
-    max-width: 600px;
-}
-
-.hero h2 {
-    font-size: 3rem;
+.home h2 {
+    font-size: 32px;
     margin-bottom: 20px;
 }
 
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+.home p {
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-.btn-primary {
-    padding: 15px 30px;
-    background-color: #00ffcc;
-    color: #101010;
+.home ul {
+    list-style: none;
+    padding: 0;
+}
+
+.home ul li {
+    font-size: 18px;
+    color: #008080;
+}
+
+.home ul li a {
+    color: #008080;
     text-decoration: none;
-    font-size: 1rem;
-    border-radius: 25px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.btn-primary:hover {
-    background-color: #00cc99;
-    transform: scale(1.05);
-}
-
-/* Seção de Destaques de Serviços */
-.highlights {
-    padding: 50px 0;
-    background-color: #181818;
-    color: #fff;
-    text-align: center;
-}
-
-.section-title {
-    font-size: 2rem;
-    color: #00ffcc;
-    margin-bottom: 30px;
-}
-
-.features {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.feature {
-    background: #222;
-    padding: 30px;
-    border-radius: 8px;
-    text-align: center;
-    flex: 1 1 30%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.feature:hover {
-    transform: translateY(-10px);
-}
-
-.feature h3 {
-    font-size: 1.5rem;
-    color: #00ffcc;
-    margin-bottom: 10px;
-}
-
-.feature p {
-    color: #bbb;
-}
-
-/* Seção de Sobre Nós */
-.about-us {
-    padding: 50px 0;
-    background-color: #101010;
-    color: #fff;
-    text-align: center;
-}
-
-.about-us p {
-    font-size: 1.1rem;
-    color: #bbb;
-    margin-top: 20px;
-}
-
-/* Seção de Contatos */
-.contact-info {
-    padding: 50px 0;
-    background-color: #181818;
-    color: #fff;
-    text-align: center;
-}
-
-.contact-info p {
-    font-size: 1.2rem;
-    color: #bbb;
-    margin: 10px 0;
-}
-
-.contact-info .whatsapp-link {
-    color: #00ffcc;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contact-info .whatsapp-link:hover {
-    text-decoration: underline;
-}
-
-.contact-info form {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    text-align: left;
-}
-
-.contact-info label {
-    font-size: 1.1rem;
-    color: #fff;
-}
-
-.contact-info input, .contact-info textarea {
-    padding: 12px;
-    background-color: #222;
-    color: #fff;
-    border: 2px solid #444;
-    border-radius: 5px;
-    font-size: 1rem;
-    width: 100%;
-}
-
-.contact-info button {
-    padding: 12px 20px;
-    background-color: #00ffcc;
-    color: #101010;
-    font-size: 1.1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.contact-info button:hover {
-    background-color: #00cc99;
 }
 
 /* Rodapé */
 .footer {
-    background-color: #101010;
-    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    color: #aaa;
-}
-
-.footer p {
-    font-size: 1rem;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero h2 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .features {
-        flex-direction: column;
-    }
-
-    .feature {
-        flex: 1 1 100%;
-        margin-bottom: 20px;
-    }
+    padding: 10px;
 }
