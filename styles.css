@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #121212;
+    color: #f4f4f4;
 }
 
 .container {
@@ -19,15 +19,15 @@ body {
 /* Cabeçalho */
 .header {
     background: linear-gradient(to right, #006666, #00cccc);
+    padding: 20px 0;
     color: white;
-    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
 }
 
@@ -40,34 +40,35 @@ body {
 .navbar ul li a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     transition: color 0.3s ease;
 }
 
-.navbar ul li a:hover {
+.navbar ul li a:hover, 
+.navbar ul li a.active {
     color: #ffcc00;
 }
 
-/* Hero Section */
+/* Seção Hero */
 .hero {
     background: url('tech-bg.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
-    padding: 60px 20px;
+    padding: 100px 20px;
 }
 
 .hero h2 {
     font-size: 48px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 18px;
     margin-bottom: 20px;
 }
 
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
 .btn-primary {
-    padding: 10px 20px;
+    padding: 15px 30px;
     background: #ffcc00;
     color: #006666;
     text-decoration: none;
@@ -82,50 +83,56 @@ body {
 
 /* Serviços Destaques */
 .highlights {
-    padding: 40px 0;
-    background-color: #fff;
+    padding: 60px 0;
+    background: #222;
     text-align: center;
 }
 
 .section-title {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #006666;
+    font-size: 36px;
+    color: #00cccc;
+    margin-bottom: 40px;
 }
 
 .features {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .feature {
-    background: #f0f0f0;
+    background: #333;
     padding: 20px;
     border-radius: 8px;
     width: 30%;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature:hover {
     transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
 .feature h3 {
-    color: #006666;
+    color: #00cccc;
     margin-bottom: 10px;
 }
 
 .feature p {
     font-size: 16px;
-    color: #555;
+    color: #f4f4f4;
 }
 
 /* Rodapé */
 .footer {
-    background: #333;
+    background: #111;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px 0;
+}
+
+.footer p {
+    font-size: 14px;
 }
