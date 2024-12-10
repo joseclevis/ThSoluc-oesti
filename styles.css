@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -68,41 +68,43 @@ body {
     color: #f4f4f4;
 }
 
-.service-list {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+/* Tabela de Serviços */
+.service-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
 }
 
-.service {
+.service-table th, .service-table td {
+    padding: 15px 20px;
+    text-align: left;
+    border: 1px solid #555;
+}
+
+.service-table th {
+    background: #00cccc;
+    color: #121212;
+    font-size: 18px;
+}
+
+.service-table tr:nth-child(even) {
+    background: #222;
+}
+
+.service-table tr:hover {
     background: #333;
-    padding: 20px;
-    border-radius: 8px;
-    width: 30%;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: background 0.3s ease;
 }
 
-.service:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-}
-
-.service h3 {
-    color: #00cccc;
-    margin-bottom: 10px;
-}
-
-.service p {
-    font-size: 16px;
+.service-table td {
     color: #f4f4f4;
 }
 
+/* Botões */
 .btn, .btn-primary {
     padding: 10px 20px;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 5px;
     text-decoration: none;
     display: inline-block;
     border-radius: 5px;
@@ -117,7 +119,7 @@ body {
 
 .btn-primary {
     background: #ffcc00;
-    color: #006666;
+    color: #121212;
 }
 
 .btn:hover {
