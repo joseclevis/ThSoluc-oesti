@@ -141,6 +141,11 @@ body {
 }
 
 /* Tabela de Serviços */
+.service-table-section {
+    padding: 60px 0;
+    background: #0d1117;
+}
+
 .service-table {
     width: 100%;
     border-collapse: collapse;
