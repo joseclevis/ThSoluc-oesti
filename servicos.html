@@ -3,100 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços e Contrato - TH Soluções em TI</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Serviços - TH Soluções em TI</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<!-- Cabeçalho -->
-<header class="header">
-    <div class="container">
-        <h1 class="logo">TH Soluções em TI</h1>
-        <nav class="navbar">
+    <header>
+        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#servicos" class="active">Serviços</a></li>
-                <li><a href="contatos.html">Contatos</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
-    </div>
-</header>
+    </header>
 
-<!-- Seção de Serviços -->
-<section id="servicos" class="section">
-    <div class="container">
-        <h2 class="section-title">Nossos Serviços</h2>
-        <p class="section-description">Soluções tecnológicas avançadas para atender às necessidades específicas da sua empresa.</p>
+    <section class="services-list">
+        <h2>Nossos Serviços</h2>
+        <div class="service-item">
+            <h3>Cyber Security</h3>
+            <p>Proteja sua infraestrutura digital com as melhores práticas de segurança.</p>
+        </div>
+        <div class="service-item">
+            <h3>Infraestrutura de Redes</h3>
+            <p>Planejamento e execução de cabeamento estruturado para uma rede segura e eficiente.</p>
+        </div>
+        <div class="service-item">
+            <h3>Segurança Eletrônica</h3>
+            <p>Sistemas avançados de vigilância para proteger seu ambiente físico.</p>
+        </div>
+        <div class="service-item">
+            <h3>Service Desk / Suporte</h3>
+            <p>Suporte técnico especializado para resolver seus problemas rapidamente.</p>
+        </div>
+        <div class="service-item">
+            <h3>IoT</h3>
+            <p>Transforme seu negócio com soluções inteligentes conectadas à Internet das Coisas.</p>
+        </div>
+    </section>
 
-        <table class="service-table">
-            <thead>
-                <tr>
-                    <th>Serviço</th>
-                    <th>Descrição</th>
-                    <th>Valor</th>
-                    <th>Ação</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Cyber Security</td>
-                    <td>Proteção contra ataques cibernéticos 24/7.</td>
-                    <td>R$ 1.200/mês</td>
-                    <td>
-                        <button class="btn" onclick="showDetails('Cyber Security')">Saiba Mais</button>
-                        <button class="btn-primary" onclick="location.href='contatos.html?servico=Cyber Security'">Contratar</button>
-                    </td>
-                </tr>
+    <footer>
+        <p>&copy; 2024 TH Soluções em TI</p>
+    </footer>
 
-                <tr>
-                    <td>Cabeamento Estruturado</td>
-                    <td>Redes corporativas seguras e eficazes.</td>
-                    <td>R$ 900/projeto</td>
-                    <td>
-                        <button class="btn" onclick="showDetails('Cabeamento Estruturado')">Saiba Mais</button>
-                        <button class="btn-primary" onclick="location.href='contatos.html?servico=Cabeamento Estruturado'">Contratar</button>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Segurança Eletrônica</td>
-                    <td>Monitoramento contínuo e equipamentos avançados.</td>
-                    <td>R$ 800/mês</td>
-                    <td>
-                        <button class="btn" onclick="showDetails('Segurança Eletrônica')">Saiba Mais</button>
-                        <button class="btn-primary" onclick="location.href='contatos.html?servico=Segurança Eletrônica'">Contratar</button>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Service Desk</td>
-                    <td>Suporte técnico especializado 24/7.</td>
-                    <td>R$ 1.500/mês</td>
-                    <td>
-                        <button class="btn" onclick="showDetails('Service Desk')">Saiba Mais</button>
-                        <button class="btn-primary" onclick="location.href='contatos.html?servico=Service Desk'">Contratar</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</section>
-
-<!-- Rodapé -->
-<footer class="footer">
-    <div class="container">
-        <p>&copy; 2024 TH Soluções em TI. Todos os direitos reservados.</p>
-    </div>
-</footer>
-
-<!-- JavaScript -->
-<script>
-function showDetails(serviceName) {
-    alert(`Mais detalhes sobre o serviço: ${serviceName}. Entre em contato para mais informações.`);
-}
-</script>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
-
