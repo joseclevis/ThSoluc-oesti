@@ -50,6 +50,96 @@ body {
     color: #ffdd00;
 }
 
+/* Seção Hero */
+.hero {
+    background: url('path/to/your/image.jpg') no-repeat center center/cover;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #ffdd00;
+    color: #03045e;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #ffd700;
+}
+
+/* Sobre a Empresa */
+.about {
+    background: #1f2631;
+    padding: 60px 0;
+}
+
+.about .section-title {
+    font-size: 32px;
+    color: #ffdd00;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Serviços Destaques */
+.highlights {
+    background: #03045e;
+    padding: 60px 0;
+}
+
+.highlights .section-title {
+    font-size: 32px;
+    color: #ffdd00;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.feature {
+    background: #0077b6;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    flex: 1;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.feature p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
 /* Tabela de Serviços */
 .service-table {
     width: 100%;
@@ -80,35 +170,6 @@ body {
     background: #03045e;
 }
 
-/* Botões */
-.btn, .btn-primary {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin-top: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.btn {
-    background: #0077b6;
-    color: white;
-}
-
-.btn-primary {
-    background: #ffdd00;
-    color: #03045e;
-}
-
-.btn:hover {
-    background: #00b4d8;
-}
-
-.btn-primary:hover {
-    background: #ffd700;
-}
-
 /* Rodapé */
 .footer {
     background: #03045e;
@@ -126,6 +187,22 @@ body {
     .navbar ul {
         flex-direction: column;
         text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .features-grid {
+        flex-direction: column;
+    }
+
+    .feature {
+        margin-bottom: 20px;
     }
 
     .service-table {
