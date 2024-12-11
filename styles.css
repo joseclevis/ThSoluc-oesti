@@ -1,4 +1,3 @@
-/* Reset Básico */
 * {
     margin: 0;
     padding: 0;
@@ -6,211 +5,109 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #0d1117;
-    color: #f4f4f4;
-    scroll-behavior: smooth;
-}
-
-.container {
-    width: 85%;
-    margin: 0 auto;
-}
-
-/* Cabeçalho */
-.header {
-    background: linear-gradient(to right, #00b4d8, #03045e);
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 28px;
-    font-weight: bold;
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
     color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.navbar ul {
-    list-style: none;
+nav ul {
+    list-style-type: none;
     display: flex;
-    gap: 25px;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
 }
 
-.navbar ul li a {
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
     color: white;
-    font-size: 18px;
     text-decoration: none;
-    transition: color 0.3s ease;
+    font-size: 18px;
 }
 
-.navbar ul li a:hover, .navbar ul li a.active {
-    color: #ffdd00;
-}
-
-/* Seção Hero */
 .hero {
-    background: url('path/to/your/image.jpg') no-repeat center center/cover;
-    padding: 80px 0;
     text-align: center;
+    padding: 50px;
+    background: #0073e6;
 }
 
-.hero-content h2 {
-    font-size: 36px;
-    color: white;
-    margin-bottom: 20px;
+.hero h1 {
+    font-size: 3rem;
 }
 
-.hero-content p {
-    font-size: 18px;
-    color: white;
-    margin-bottom: 30px;
+.hero p {
+    font-size: 1.5rem;
 }
 
-.btn-primary {
+.hero .btn {
+    display: inline-block;
+    background: #ff6600;
     padding: 10px 20px;
-    font-size: 16px;
-    background: #ffdd00;
-    color: #03045e;
+    color: white;
     text-decoration: none;
+    font-size: 1.2rem;
     border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    margin-top: 20px;
 }
 
-.btn-primary:hover {
-    background: #ffd700;
+.hero .btn:hover {
+    background: #ff4500;
 }
 
-/* Sobre a Empresa */
-.about {
-    background: #1f2631;
-    padding: 60px 0;
+.services, .services-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 50px;
 }
 
-.about .section-title {
-    font-size: 32px;
-    color: #ffdd00;
-    margin-bottom: 20px;
-}
-
-.about p {
-    font-size: 18px;
-    color: #f4f4f4;
-    line-height: 1.6;
-}
-
-/* Serviços Destaques */
-.highlights {
-    background: #03045e;
-    padding: 60px 0;
-}
-
-.highlights .section-title {
-    font-size: 32px;
-    color: #ffdd00;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.features-grid {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-.feature {
-    background: #0077b6;
+.service-item {
+    background: #222;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+footer {
     text-align: center;
-    color: white;
-    flex: 1;
+    background-color: #333;
+    padding: 20px;
 }
 
-.feature h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
+footer p {
+    font-size: 1rem;
 }
 
-.feature p {
-    font-size: 16px;
-    line-height: 1.5;
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
 }
 
-/* Tabela de Serviços */
-.service-table-section {
-    padding: 60px 0;
-    background: #0d1117;
-}
-
-.service-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 40px 0;
-    background: rgba(3, 4, 94, 0.8);
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.service-table th, .service-table td {
-    padding: 15px 20px;
-    text-align: left;
+.contact input, .contact textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #333;
     color: white;
 }
 
-.service-table th {
-    background: #0077b6;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-.service-table tr:nth-child(even) {
-    background: rgba(3, 4, 94, 0.7);
-}
-
-.service-table tr:hover {
-    background: #03045e;
-}
-
-/* Rodapé */
-.footer {
-    background: #03045e;
+.contact button {
+    background-color: #ff6600;
+    padding: 10px;
+    border: none;
     color: white;
-    text-align: center;
-    padding: 20px 0;
+    border-radius: 5px;
 }
 
-.footer p {
-    font-size: 14px;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-content h2 {
-        font-size: 28px;
-    }
-
-    .hero-content p {
-        font-size: 16px;
-    }
-
-    .features-grid {
-        flex-direction: column;
-    }
-
-    .feature {
-        margin-bottom: 20px;
-    }
-
-    .service-table {
-        font-size: 14px;
-    }
+.contact button:hover {
+    background-color: #ff4500;
 }
