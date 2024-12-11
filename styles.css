@@ -67,7 +67,7 @@ header nav ul li a:hover {
 }
 
 /* Estilo para a seção principal */
-.sobre, .contato, .servicos, .home {
+.sobre, .contatos, .servicos, .index {
     padding: 60px 20px;
     text-align: center;
     color: #fff;
@@ -75,7 +75,7 @@ header nav ul li a:hover {
 }
 
 /* Estilo para o título principal */
-.sobre h1, .contato h1, .servicos h1, .home h1 {
+.sobre h1, .contatos h1, .servicos h1, .index h1 {
     font-size: 40px;
     color: #00bcd4;
     margin-bottom: 30px;
@@ -205,7 +205,7 @@ form button:hover {
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .sobre, .contato, .servicos, .home {
+    .sobre, .contatos, .servicos, .index {
         padding: 40px 20px;
     }
 
@@ -213,7 +213,7 @@ form button:hover {
         width: 90%;
     }
 
-    .sobre h1, .contato h1, .servicos h1, .home h1 {
+    .sobre h1, .contatos h1, .servicos h1, .index h1 {
         font-size: 32px;
     }
 
