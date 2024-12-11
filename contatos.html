@@ -3,60 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatos - TH Soluções em TI</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Contato - TH Soluções em TI</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <header class="header">
-        <div class="container">
-            <h1 class="logo">TH Soluções em TI</h1>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="sobre.html">Sobre Nós</a></li>
-                    <li><a href="contatos.html">Contatos</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Contatos -->
-    <section class="section">
-        <div class="container">
-            <h2>Entre em Contato</h2>
-            <p>Entre em contato conosco para saber mais sobre nossos serviços ou solicitar uma proposta personalizada.</p>
-            <div class="contact-info">
-                <p><strong>Email:</strong> contato@thsolucoes.com</p>
-                <p><strong>Telefone:</strong> (11) 98765-4321</p>
-                <p><strong>Endereço:</strong> Rua da Tecnologia, 123 - Bairro Inovação - Aracaju, SE</p>
-                
-                <!-- Link para WhatsApp -->
-                <p><strong>WhatsApp:</strong> <a href="https://wa.me/5579996385912" target="_blank" class="whatsapp-link">Clique aqui para conversar conosco</a></p>
-                
-                <form>
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
-                    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-                    
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-        </div>
+    <section class="contact">
+        <h2>Entre em Contato</h2>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
     </section>
 
-    <!-- Rodapé -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 TH Soluções em TI. Todos os direitos reservados.</p>
-        </div>
+    <footer>
+        <p>&copy; 2024 TH Soluções em TI</p>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
