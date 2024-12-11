@@ -1,114 +1,186 @@
-/* Estilos gerais para o body */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+/* Reset de margens e preenchimentos */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais para o body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #0d1f2d, #0e2b38); /* Gradiente escuro */
+    color: #d1d1d1;
+    line-height: 1.6;
 }
 
 /* Estilos para o header (barra de navegação) */
 header {
-    background-color: #333;
-    padding: 20px;
     position: sticky;
     top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 0;
     z-index: 100;
-    transition: background-color 0.3s ease;
+    animation: slideIn 1s ease-out;
 }
 
 header nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
 
 header nav ul li {
-    margin: 0 15px;
+    position: relative;
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #00bcd4; /* Azul cibernético */
     text-decoration: none;
     font-size: 18px;
+    text-transform: uppercase;
     position: relative;
-    transition: color 0.3s ease;
+    padding: 8px 0;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 header nav ul li a:hover {
-    color: #00bcd4; /* Cor ao passar o mouse */
+    color: #ffffff;
+    transform: translateY(-4px); /* Efeito de levitação */
 }
 
-/* Estilos para a seção "Sobre" */
+/* Animação para o menu de navegação */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo para a seção "Sobre" */
 .sobre {
-    padding: 50px 20px;
+    padding: 60px 20px;
     text-align: center;
+    color: #fff;
     animation: fadeIn 2s ease-out;
+}
+
+/* Animação de fadeIn para o conteúdo */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Estilo para o título principal */
 .sobre h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 40px;
     color: #00bcd4;
+    margin-bottom: 30px;
+    letter-spacing: 1.5px;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
-/* Estilo para cada seção de informações (Missão, Visão, etc.) */
+/* Estilo para cada seção de informações */
 .info-section {
-    background-color: #fff;
-    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
     margin: 20px auto;
+    padding: 30px;
     width: 80%;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+    animation: slideUp 0.6s ease-out;
 }
 
+/* Animação de slideUp para as seções */
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para os títulos de cada seção */
 .info-section h2 {
     font-size: 28px;
-    margin-bottom: 10px;
     color: #00bcd4;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
 }
 
+/* Estilos para os parágrafos e listas nas seções */
 .info-section p, .info-section ul {
     font-size: 18px;
-    color: #555;
+    color: #e0e0e0;
+    line-height: 1.6;
 }
 
-/* Estilo para lista de valores */
+/* Estilos para a lista de valores */
 .info-section ul {
     list-style-type: none;
-    padding-left: 0;
+    padding-left: 20px;
 }
 
 .info-section ul li {
     margin-bottom: 10px;
+    position: relative;
 }
 
-/* Estilos para o footer */
+.info-section ul li::before {
+    content: '•';
+    color: #00bcd4; /* Azul cibernético */
+    position: absolute;
+    left: -20px;
+    font-size: 24px;
+    top: 0;
+}
+
+/* Estilo para o footer */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     position: relative;
     bottom: 0;
     width: 100%;
-}
-
-/* Animações */
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    animation: fadeIn 3s ease-out;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
     .sobre {
-        padding: 30px 10px;
+        padding: 40px 20px;
     }
 
     .info-section {
         width: 90%;
     }
+
+    .sobre h1 {
+        font-size: 32px;
+    }
+
+    .info-section h2 {
+        font-size: 24px;
+    }
+
+    .info-section p, .info-section ul {
+        font-size: 16px;
+    }
 }
+
