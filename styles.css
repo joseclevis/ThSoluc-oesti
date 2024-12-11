@@ -1,5 +1,7 @@
 /* Resetando margens e padding, garantindo que o box-sizing seja aplicado a todos os elementos */
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,18 +9,22 @@
 
 /* Estilo geral do body */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #0a0a0a;
-    color: white;
+    color: #fff;
+    line-height: 1.6;
 }
 
 /* Estilo para a navegação */
+nav {
+    background-color: #333;
+}
+
 nav ul {
-    list-style-type: none;
     display: flex;
     justify-content: center;
-    background-color: #333;
-    padding: 10px;
+    list-style-type: none;
+    padding: 15px 0;
 }
 
 nav ul li {
@@ -26,65 +32,83 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-size: 18px;
+    transition: color 0.3s;
 }
 
-/* Estilo para a seção hero */
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Estilo para a seção Hero */
 .hero {
     text-align: center;
-    padding: 50px;
-    background: #0073e6;
+    padding: 80px 20px;
+    background-color: #0073e6;
 }
 
 .hero h1 {
     font-size: 3rem;
+    margin-bottom: 20px;
 }
 
 .hero p {
     font-size: 1.5rem;
+    margin-bottom: 40px;
 }
 
 .hero .btn {
     display: inline-block;
-    background: #ff6600;
-    padding: 10px 20px;
-    color: white;
+    background-color: #ff6600;
+    padding: 12px 30px;
+    color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
     border-radius: 5px;
-    margin-top: 20px;
-    transition: background 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .hero .btn:hover {
-    background: #ff4500;
+    background-color: #ff4500;
 }
 
-/* Estilo para a seção de serviços */
-.services, .services-list {
+/* Estilo para a seção de Serviços */
+.services,
+.services-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
-    padding: 50px;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .service-item {
-    background: #222;
+    background-color: #222;
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
+}
+
+.service-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 1rem;
 }
 
 .service-item:hover {
     transform: scale(1.05);
 }
 
-/* Estilo do rodapé */
+/* Estilo do Rodapé */
 footer {
-    text-align: center;
     background-color: #333;
+    text-align: center;
     padding: 20px;
 }
 
@@ -92,29 +116,48 @@ footer p {
     font-size: 1rem;
 }
 
-/* Estilo para o formulário de contato */
+/* Estilo para o Formulário de Contato */
 .contact form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    padding: 30px;
+    gap: 20px;
+    padding: 40px;
+    background-color: #222;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 40px auto;
 }
 
-.contact input, .contact textarea {
-    padding: 10px;
+.contact label {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.contact input,
+.contact textarea {
+    padding: 12px;
     border-radius: 5px;
     border: 1px solid #555;
     background-color: #333;
     color: white;
+    font-size: 1rem;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #ff6600;
+    outline: none;
 }
 
 .contact button {
     background-color: #ff6600;
-    padding: 10px;
+    padding: 12px;
     border: none;
     color: white;
+    font-size: 1.2rem;
     border-radius: 5px;
-    transition: background 0.3s ease;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .contact button:hover {
