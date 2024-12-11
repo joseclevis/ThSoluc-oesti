@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos - TH Soluções em TI</title>
+    <!-- Corrigindo o caminho do CSS se necessário -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="contatos">
     <header>
         <nav>
             <ul>
@@ -18,29 +19,32 @@
         </nav>
     </header>
 
-    <section class="contatos">
-        <h1>Entre em Contato</h1>
-        <form action="#" method="POST">
-            <div class="form-group">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-            </div>
-            <div class="form-group">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" required></textarea>
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+    <main>
+        <section class="contatos">
+            <h1>Entre em Contato</h1>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 TH Soluções em TI - Todos os direitos reservados.</p>
     </footer>
 
+    <!-- Se necessário, ajuste o caminho do arquivo JS -->
     <script src="script.js"></script>
 </body>
 </html>
