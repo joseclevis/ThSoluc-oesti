@@ -3,66 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nós - TH Soluções em TI</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="css/styles.css">
-
+    <title>Sobre - TH Soluções em TI</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <header class="header">
-        <div class="container">
-            <h1 class="logo">TH Soluções em TI</h1>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="sobre.html" class="active">Sobre Nós</a></li>
-                    <li><a href="contatos.html">Contatos</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Sobre Nós -->
-    <section class="section sobre-nos">
-        <div class="container">
-            <h2 class="section-title">Sobre Nós</h2>
-            <p class="section-description">
-                A <strong>TH Soluções em TI</strong> é uma empresa especializada em soluções tecnológicas, oferecendo serviços de alta qualidade que atendem às necessidades de empresas em diferentes setores. Nosso compromisso é transformar desafios tecnológicos em oportunidades de crescimento.
-            </p>
-            <div class="sobre-detalhes">
-                <div class="propósito">
-                    <h3 class="subsection-title">Nosso Propósito</h3>
-                    <p>Garantir que nossos clientes tenham acesso às melhores tecnologias disponíveis no mercado, com soluções personalizadas que promovam eficiência, segurança e inovação.</p>
-                </div>
-                <div class="valores">
-                    <h3 class="subsection-title">Nossos Valores</h3>
-                    <ul class="valores-list">
-                        <li>📌 Excelência no atendimento ao cliente</li>
-                        <li>💡 Inovação contínua</li>
-                        <li>📈 Compromisso com resultados</li>
-                        <li>⚖️ Ética e transparência</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <section class="about">
+        <h2>Sobre Nós</h2>
+        <p>A TH Soluções em TI é uma empresa especializada em oferecer serviços tecnológicos de ponta para pequenas e grandes empresas. Estamos aqui para ajudar a transformar o seu negócio com soluções de segurança, redes, suporte técnico, e muito mais.</p>
     </section>
 
-    <!-- Rodapé -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 TH Soluções em TI. Todos os direitos reservados.</p>
-        </div>
+    <footer>
+        <p>&copy; 2024 TH Soluções em TI</p>
     </footer>
 
-    <!-- JavaScript -->
-    <script>
-        document.querySelectorAll('.navbar a').forEach(link => {
-            link.addEventListener('click', () => {
-                alert(`Você está navegando para: ${link.textContent}`);
-            });
-        });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
