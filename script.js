@@ -1,18 +1,21 @@
-// Animação de Detalhes
-function showDetails(serviceName) {
-    const modal = document.createElement("div");
-    modal.className = "modal";
-    modal.innerHTML = `
-        <div class="modal-content">
-            <h2>${serviceName}</h2>
-            <p>Mais informações sobre o serviço: <strong>${serviceName}</strong>.</p>
-            <button onclick="closeModal()" class="btn">Fechar</button>
-        </div>
-    `;
-    document.body.appendChild(modal);
-}
+document.addEventListener('DOMContentLoaded', function () {
+    const serviceItems = document.querySelectorAll('.service-item');
+    
+    serviceItems.forEach(item => {
+        item.classList.add('fade-in');
+    });
+});
 
-function closeModal() {
-    const modal = document.querySelector(".modal");
-    if (modal) modal.remove();
-}
+// Adicionando animações de fade-in aos elementos
+window.addEventListener('scroll', function () {
+    const elements = document.querySelectorAll('.fade-in');
+    const windowHeight = window.innerHeight;
+    
+    elements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        
+        if (elementTop < windowHeight) {
+            element.classList.add('visible');
+        }
+    });
+});
